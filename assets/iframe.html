@@ -117,13 +117,13 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="listCustomObjModalLabel">Quantidade de Usuários</h1>
+            <h1 class="modal-title fs-5" id="listCustomObjModalLabel">Lista Custom Obj</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div id="showCustomObj" hidden="true">
               <p>
-                Foram encontrados 
+                Foram encontrados <span style="color: red;">{{customCount}}</span> custom Obj(s)
               </p>
             </div>
           </div>
@@ -188,7 +188,7 @@
               <label for="objTitlePlu" class="form-label">Titulo pluralizado</label>
               <input type="text" class="form-control" id="objTitlePlu" name="objTitlePlu">
 
-              <button type="submit" class="btn btn-primary">Salvar</button>
+              <button type="submit" class="mt-3 w-100 btn btn-primary">Salvar</button>
 
             </form>
           </div>

@@ -52,6 +52,23 @@
           console.error(error);
         });
         return deferred.promise;
+      },
+
+      listCustomObj: function () {
+        var deferred = $q.defer();
+
+        client.request({
+          url: '/api/v2/custom_objects',
+          type: 'GET',
+          contentType: 'application/json'
+        }).then(function(response) {
+          deferred.resolve(response);
+          //console.log(response);
+        }).catch(function(error) {
+          deferred.reject(error)
+          //console.error(error);
+        });
+        return deferred.promise;
       }
     }
   

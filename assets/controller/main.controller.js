@@ -63,7 +63,7 @@
 
     //Finaliza CONTAR USUÁRIOS!!!
 
-
+    //Inicia CRIAR CUSTOM Obj!!!
     document.getElementById('createCustomOBJForm').addEventListener('submit', function (event) {
       event.preventDefault()
 
@@ -91,7 +91,21 @@
       // console.log(objTitle);
       // console.log(objTitlePlu);
     });
+    //Finaliza CRIAR CUSTOM Obj!!!
 
+    //Inicia Listar CUSTOM Obj!!!
+    document.getElementById('listCustomObjForm').addEventListener('submit', function (event) {
+      event.preventDefault()
+
+      zendeskService.listCustomObj().then(function (count) {
+        console.log(count.count);
+        $scope.customCount = count.count;
+        document.getElementById('showCustomObj').hidden = false;
+        //console.log(cont);
+      });
+
+    });
+    //Finaliza Listar CUSTOM Obj!!!
   }]);
 
 })();
