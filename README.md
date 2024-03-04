@@ -1,14 +1,14 @@
-# App name
+# zenAngularJS
 
-[brief description of the app]
+### Projeto de estudos para plataforma Zendesk:
 
-### The following information is displayed:
-
-* info1
-* info2
-* info3
-
-Please submit bug reports to [Insert Link](). Pull requests are welcome.
+* AngularJS
+* Zendesk API
+* Zendesk ZAFClient
+* Zendesk ZCli
+* JQuery
+* Bootstrap
 
 ### Screenshot(s):
-[put your screenshots down here.]
+![image](https://github.com/felipeceltic/zenAngularJS/assets/108404110/a50a33cd-689b-49fe-8d8d-d6fa9aa3255f)
+
